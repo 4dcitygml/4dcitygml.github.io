@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Open tools and demonstration datasets for exploring building-level history in CityGML.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#173f3a">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://4dcitygml.github.io/">
+  <meta property="og:title" content="4dcitygml — City models that remember">
+  <meta property="og:description" content="Open tools and demonstration datasets for exploring building-level history in CityGML.">
+  <meta property="og:image" content="https://4dcitygml.github.io/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="4dcitygml — City models that remember">
+  <meta name="twitter:description" content="Open tools and demonstration datasets for exploring building-level history in CityGML.">
+  <meta name="twitter:image" content="https://4dcitygml.github.io/og.png">
+  <title>4dcitygml — City models that remember</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="/" aria-label="4dcitygml home">
+      <span class="wordmark-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>4dcitygml</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#cities" data-i18n="navCities">Cities</a>
+      <a href="#method" data-i18n="navMethod">How it works</a>
+      <a href="#repositories" data-i18n="navRepos">Repositories</a>
+    </nav>
+    <div class="languages" aria-label="Language">
+      <a href="?lang=en" lang="en" data-language="en">EN</a>
+      <a href="?lang=ja" lang="ja" data-language="ja">日本語</a>
+      <a href="?lang=de" lang="de" data-language="de">DE</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">Open urban data · building by building</p>
+        <h1 id="hero-title" data-i18n="heroTitle">City models<br>that remember.</h1>
+        <p class="hero-lede" data-i18n="heroLede">
+          Tools and compact demonstration datasets for following the history of individual buildings in CityGML.
+        </p>
+        <div class="actions">
+          <a class="button button-primary" href="https://github.com/4dcitygml/tools/releases" data-i18n="download">Get the tools</a>
+          <a class="button button-secondary" href="#cities" data-i18n="explore">Explore the demos</a>
+        </div>
+      </div>
+      <div class="hero-model" aria-hidden="true">
+        <div class="axis axis-x"></div>
+        <div class="axis axis-y"></div>
+        <div class="building building-a"><span>2023</span></div>
+        <div class="building building-b"><span>2024</span></div>
+        <div class="building building-c"><span>2025</span></div>
+        <div class="model-label">stable building ID</div>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>3</dt><dd data-i18n="statCities">demo cities</dd></div>
+        <div><dt>7,495</dt><dd data-i18n="statBuildings">versioned buildings</dd></div>
+        <div><dt>1</dt><dd data-i18n="statHistory">continuous history</dd></div>
+      </dl>
+    </section>
+
+    <section class="section intro" aria-labelledby="intro-title">
+      <p class="section-number">01</p>
+      <div>
+        <p class="eyebrow" data-i18n="introEyebrow">The idea</p>
+        <h2 id="intro-title" data-i18n="introTitle">Treat change as part of the model.</h2>
+      </div>
+      <p class="section-lede" data-i18n="introBody">
+        Keep source-compatible CityGML in Git, preserve stable identifiers, and make each reviewed building change traceable. Format migrations become reproducible releases—not breaks in history.
+      </p>
+    </section>
+
+    <section class="section city-section" id="cities" aria-labelledby="cities-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">02</p>
+          <p class="eyebrow" data-i18n="citiesEyebrow">Three deliberately different datasets</p>
+          <h2 id="cities-title" data-i18n="citiesTitle">Explore the same workflow across cities.</h2>
+        </div>
+        <p data-i18n="citiesBody">Different standards, coordinate systems, identifiers, languages, and texture availability keep the tools honest.</p>
+      </div>
+
+      <div class="city-grid">
+        <article class="city-card city-tokyo">
+          <div class="city-index">JP / 01</div>
+          <div class="city-shape" aria-hidden="true"></div>
+          <h3>Tokyo Station</h3>
+          <p class="city-local">東京駅</p>
+          <p data-i18n="tokyoBody">A textured PLATEAU sample in central Tokyo, managed in its source-compatible CityGML edition.</p>
+          <dl>
+            <div><dt data-i18n="buildings">Buildings</dt><dd>1,022</dd></div>
+            <div><dt data-i18n="format">Format</dt><dd>CityGML 2.0 + i-UR 3</dd></div>
+            <div><dt data-i18n="idLabel">Stable ID</dt><dd>uro:buildingID</dd></div>
+          </dl>
+          <a href="https://github.com/4dcitygml/sample-tokyo-station" data-i18n="openRepo">Open repository</a>
+        </article>
+
+        <article class="city-card city-munich">
+          <div class="city-index">DE / 02</div>
+          <div class="city-shape" aria-hidden="true"></div>
+          <h3>Munich Hauptbahnhof</h3>
+          <p class="city-local">München Hbf</p>
+          <p data-i18n="munichBody">Bavarian LoD2 buildings around the central station, testing metric UTM data and external identifiers.</p>
+          <dl>
+            <div><dt data-i18n="buildings">Buildings</dt><dd>5,499</dd></div>
+            <div><dt data-i18n="format">Format</dt><dd>CityGML 1.0 · LoD2</dd></div>
+            <div><dt data-i18n="idLabel">Stable ID</dt><dd>gml:id</dd></div>
+          </dl>
+          <a href="https://github.com/4dcitygml/sample-munich-station" data-i18n="openRepo">Open repository</a>
+        </article>
+
+        <article class="city-card city-newyork">
+          <div class="city-index">US / 03</div>
+          <div class="city-shape" aria-hidden="true"></div>
+          <h3>Grand Central</h3>
+          <p class="city-local">New York City</p>
+          <p data-i18n="newyorkBody">A compact NYC model testing US survey feet, generic attributes, and BIN-based building identity.</p>
+          <dl>
+            <div><dt data-i18n="buildings">Buildings</dt><dd>974</dd></div>
+            <div><dt data-i18n="dataset">Dataset</dt><dd>NYC 3-D Building Model</dd></div>
+            <div><dt data-i18n="idLabel">Stable ID</dt><dd>BIN / gml:id fallback</dd></div>
+          </dl>
+          <a href="https://github.com/4dcitygml/sample-newyork-station" data-i18n="openRepo">Open repository</a>
+        </article>
+      </div>
+      <p class="source-note" data-i18n="sourceNote">Each repository contains its own source attribution, license terms, extraction record, and change notices.</p>
+    </section>
+
+    <section class="section method-section" id="method" aria-labelledby="method-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">03</p>
+          <p class="eyebrow" data-i18n="methodEyebrow">A small, inspectable workflow</p>
+          <h2 id="method-title" data-i18n="methodTitle">Source. Review. Release.</h2>
+        </div>
+      </div>
+      <ol class="steps">
+        <li>
+          <span>01</span>
+          <h3 data-i18n="step1Title">Keep the source edition</h3>
+          <p data-i18n="step1Body">The repository starts from a documented public dataset and keeps its source-compatible form as the canonical record.</p>
+        </li>
+        <li>
+          <span>02</span>
+          <h3 data-i18n="step2Title">Review by building</h3>
+          <p data-i18n="step2Body">Stable IDs, focused commits, evidence, and automated checks make individual changes easier to inspect.</p>
+        </li>
+        <li>
+          <span>03</span>
+          <h3 data-i18n="step3Title">Generate other editions</h3>
+          <p data-i18n="step3Body">Validated conversions are published as immutable derived releases with manifests and checksums.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section repo-section" id="repositories" aria-labelledby="repos-title">
+      <div>
+        <p class="section-number">04</p>
+        <p class="eyebrow" data-i18n="reposEyebrow">Open building blocks</p>
+        <h2 id="repos-title" data-i18n="reposTitle">Use the tools. Start a city. Inspect everything.</h2>
+      </div>
+      <div class="repo-list">
+        <a href="https://github.com/4dcitygml/tools">
+          <span class="repo-name">tools</span>
+          <span data-i18n="toolsDesc">Editors, checks, converters, schemas, and releases</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://github.com/4dcitygml/city-template">
+          <span class="repo-name">city-template</span>
+          <span data-i18n="templateDesc">A reusable starting point for an independent city repository</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://github.com/4dcitygml">
+          <span class="repo-name">4dcitygml</span>
+          <span data-i18n="orgDesc">Project repositories, decisions, issues, and contributions</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <p class="eyebrow" data-i18n="closingEyebrow">Urban data is never finished</p>
+      <h2 id="closing-title" data-i18n="closingTitle">Make the next change legible.</h2>
+      <a class="button button-light" href="https://github.com/4dcitygml/city-template" data-i18n="startCity">Start with the city template</a>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>4dcitygml</strong>
+      <p data-i18n="footerTagline">An independent, experimental open-source project.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/4dcitygml">GitHub</a>
+      <a href="https://github.com/4dcitygml/.github/blob/main/CONTRIBUTING.md" data-i18n="contribute">Contribute</a>
+      <a href="https://github.com/4dcitygml/.github/blob/main/SUPPORT.md" data-i18n="contact">Contact</a>
+    </div>
+    <p class="disclaimer" data-i18n="disclaimer">Not an official publication of OGC, Project PLATEAU, i-UR, or any source-data provider.</p>
+  </footer>
+</body>
+</html>

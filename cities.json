@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-08-26",
+  "sourceOfTruth": "Each repository's 4dcitygml.json",
+  "cities": [
+    {
+      "id": "tokyo-station",
+      "repo": "4dcitygml/sample-tokyo-station",
+      "config": "https://raw.githubusercontent.com/4dcitygml/sample-tokyo-station/main/4dcitygml.json",
+      "featured": true
+    },
+    {
+      "id": "munich-station",
+      "repo": "4dcitygml/sample-munich-station",
+      "config": "https://raw.githubusercontent.com/4dcitygml/sample-munich-station/main/4dcitygml.json",
+      "featured": true
+    },
+    {
+      "id": "newyork-station",
+      "repo": "4dcitygml/sample-newyork-station",
+      "config": "https://raw.githubusercontent.com/4dcitygml/sample-newyork-station/main/4dcitygml.json",
+      "featured": true
+    }
+  ]
+}

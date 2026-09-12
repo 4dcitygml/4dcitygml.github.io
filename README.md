@@ -5,14 +5,17 @@ Static source for the `4dcitygml` organization site at
 
 The initial portal provides:
 
-- a multilingual introduction in English, Japanese, and German;
+- an English-language introduction to the project;
 - links to tools, the city template, and three demonstration repositories;
 - `cities.json`, a small discovery cache pointing to each repository's
-  authoritative `4dcitygml.json`; and
-- `og.png`, the project-specific social preview image.
+  authoritative `4dcitygml.json`;
+- `og.jpg`, the project-specific social preview image;
+- `favicon.svg`, `favicon-32.png`, and `apple-touch-icon.png`, the site icon
+  derived from the header mark; and
+- `404.html`, which GitHub Pages serves for unknown paths.
 
-The site has no analytics, cookies, external fonts, third-party JavaScript, or
-server-side processing. It can be published directly from the root of `main`
+The site has no analytics, cookies, external fonts, JavaScript, or server-side
+processing. It can be published directly from the root of `main`
 with GitHub Pages; no build step is required.
 
 ## Publishing settings

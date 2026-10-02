@@ -1,29 +1,30 @@
 # 4dcitygml portal
 
-Static source for the `4dcitygml` organization site at
-<https://4dcitygml.github.io/>.
+Source of the `4dcitygml` organization site at <https://4dcitygml.github.io/>.
 
-The initial portal provides:
+The site is written in Markdown and rendered by GitHub Pages with Jekyll and
+the Primer theme; there is no build step in this repository.
 
-- an English-language introduction to the project;
-- links to tools, the city template, and three demonstration repositories;
-- `cities.json`, a small discovery cache pointing to each repository's
+- `index.md`: what 4dcitygml is, the repositories and their roles, and the
+  reference documents they own;
+- `cities.md`: the list of city repositories, each linking to its
   authoritative `4dcitygml.json`;
-- `og.jpg`, the project-specific social preview image;
-- `favicon.svg`, `favicon-32.png`, and `apple-touch-icon.png`, the site icon
-  derived from the header mark; and
-- `404.html`, which GitHub Pages serves for unknown paths.
+- `404.md`: served by GitHub Pages for unknown paths;
+- `_config.yml`: site title, theme, and the social preview image `og.jpg`;
+- `_includes/head-custom.html`: the site icons (`favicon.svg`,
+  `favicon-32.png`, `apple-touch-icon.png`).
 
-The site has no analytics, cookies, external fonts, JavaScript, or server-side
-processing. It can be published directly from the root of `main`
-with GitHub Pages; no build step is required.
+The site links to the repositories that own each piece of content instead of
+restating it. It has no analytics, cookies, external fonts, or JavaScript of
+its own.
 
 ## Publishing settings
 
 1. Keep the repository public.
 2. In **Settings → Pages**, select **Deploy from a branch**.
 3. Select `main` and `/ (root)`.
-4. Confirm that `/`, `/cities.json`, and all repository links resolve.
+4. Confirm that `/`, `/cities.html`, a missing path (404), and all repository
+   links resolve.
 
 Do not place unpublished source data, credentials, internal planning files, or
 temporary schema URLs in this repository. Schemas are added only after their

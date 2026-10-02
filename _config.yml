@@ -1,0 +1,14 @@
+title: 4dcitygml
+description: Building-level change history for CityGML, kept in Git and reviewed by pull request.
+url: https://4dcitygml.github.io
+baseurl: ""
+theme: jekyll-theme-primer
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /og.jpg
+
+exclude:
+  - README.md

@@ -12,12 +12,15 @@ derived releases.
 It is an independent, experimental open-source project. All of its public
 repositories are listed on [GitHub](https://github.com/4dcitygml).
 
-## Pilot cities (planned)
+## Pilot cities
 
-4dcitygml plans to call for three cities for an operational pilot. The pilot
-will be open to official initiatives of local governments and other public
-bodies and free of charge for them; 4dcitygml will provide operational support
-during the pilot. How to apply will be announced on this page.
+4dcitygml is looking for three cities to run it in an operational pilot.
+The pilot is open to official initiatives of local governments and other
+public bodies and is free of charge for them; 4dcitygml provides operational
+support during the pilot. There is no deadline: the call closes when three
+cities have been selected.
+
+To apply or to ask about the pilot, write to <4dcitygml@proton.me>.
 
 ## Repositories
 
@@ -29,8 +32,8 @@ during the pilot. How to apply will be announced on this page.
 | [.github](https://github.com/4dcitygml/.github) | Organization policies and issue forms | [CONTRIBUTING](https://github.com/4dcitygml/.github/blob/main/CONTRIBUTING.md) |
 
 A city repository is created from `city-template` and holds data, documents
-and settings only. Its workflows pin a reviewed `tools-v` commit, so shared
-checks change only when the city updates the pin.
+and settings only. Its declaration (`4dcitygml.json`) pins a reviewed `tools-v`
+commit, so shared checks change only when the city updates the pin.
 
 ## Reference
 
